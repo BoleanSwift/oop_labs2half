@@ -4,10 +4,10 @@ team_point = 10
 
 def bubbleSort(arr):
     n = len(arr)
-    for i in n:
-        for in j:
-            if arr[j][1] < arr[1][j + 1]:
-                arr[j], arr[j + 1] = arr [j +1], arr[j]
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j][1] < arr[j + 1][1]:
+                arr[j], arr[j + 1] = arr[j +1], arr[j]
     return arr
 
 teams_point = bubbleSort(teams_points)
