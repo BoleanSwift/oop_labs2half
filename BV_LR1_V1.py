@@ -1,4 +1,4 @@
-import glob
+
 
 team_point = 10
 
@@ -10,4 +10,4 @@ def bubbleSort(arr):
                 arr[j], arr[j + 1] = arr[j +1], arr[j]
     return arr
 
-teams_point = bubbleSort(teams_points)
+team_point = bubbleSort(team_point)
