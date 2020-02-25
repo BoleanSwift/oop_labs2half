@@ -1,6 +1,6 @@
 import glob
 
-team_point = []
+teams_points = []
 
 for file in glob.glob('C:/Users/Bogdan/Desktop/Scripts & Codes/Python 2 half/laba1/Introduction-To-Programming/labs_spring_2020/examples_2/var2/*.csv'):
     with open(file) as f:
@@ -18,7 +18,7 @@ for file in glob.glob('C:/Users/Bogdan/Desktop/Scripts & Codes/Python 2 half/lab
                     team[1] += 3
                 elif array[i][0] == array[i][2]:
                     team[1] += 1
-            team_point.append(team)
+            teams_points.append(team)
 
 def bubbleSort(arr):
     n = len(arr)
@@ -28,4 +28,6 @@ def bubbleSort(arr):
                 arr[j], arr[j + 1] = arr[j +1], arr[j]
     return arr
 
-team_point = bubbleSort(team_point)
+teams_points = bubbleSort(teams_points)
+for team in teams_points:
+    print(team[0], ':', team[1])
